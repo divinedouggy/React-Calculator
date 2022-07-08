@@ -8,10 +8,15 @@ import Division from './components/Division';
 function App() {
   return (
     <div className="App">
+      <div className='header'>Calculator</div>
+      <div className='as'>
       <Addition/>
       <Subtraction/>
+      </div>
+      <div className='md'>
       <Multiplication/>
       <Division/>
+      </div>
     </div>
   );
 }

@@ -33,20 +33,21 @@ function Division(props) {
 
             
 
-            <form className="add">
+            <form className="divide">
 
                 <input type="text" value={num1} onChange={event => setNum1(Number(event.target.value))}  name="value1" />
 
-                <span>x</span>
+                <span>/</span>
 
                 <input type="text" value={num2} onChange={event => setNum2(Number(event.target.value))} name="value2" />
 
                
 
                 <span>=</span>
+                <h3>{result}</h3>
                 <button onClick={divideNumbers}>Calculate</button>
 
-                <h3>{result}</h3>
+                
 
             </form>
 

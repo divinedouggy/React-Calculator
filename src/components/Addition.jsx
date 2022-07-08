@@ -44,9 +44,12 @@ function Addition(props) {
                
 
                 <span>=</span>
-                <button onClick={addNumbers}>Calculate</button>
 
                 <h3>{result}</h3>
+                
+                <button onClick={addNumbers}>Calculate</button>
+
+               
 
             </form>
 

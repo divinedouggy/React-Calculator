@@ -33,7 +33,7 @@ function Multiplication(props) {
 
             
 
-            <form className="add">
+            <form className="multiply">
 
                 <input type="text" value={num1} onChange={event => setNum1(Number(event.target.value))}  name="value1" />
 
@@ -44,9 +44,10 @@ function Multiplication(props) {
                
 
                 <span>=</span>
+                <h3>{result}</h3>
                 <button onClick={multiplyNumbers}>Calculate</button>
 
-                <h3>{result}</h3>
+                
 
             </form>
 

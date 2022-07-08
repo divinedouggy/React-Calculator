@@ -33,7 +33,7 @@ function Subtraction(props) {
 
             
 
-            <form className="add">
+            <form className="subtract">
 
                 <input type="text" value={num1} onChange={event => setNum1(Number(event.target.value))}  name="value1" />
 
@@ -44,9 +44,13 @@ function Subtraction(props) {
                
 
                 <span>=</span>
-                <button onClick={subtractNumbers}>Calculate</button>
 
                 <h3>{result}</h3>
+                
+                
+                <button onClick={subtractNumbers}>Calculate</button>
+
+                
 
             </form>
 
