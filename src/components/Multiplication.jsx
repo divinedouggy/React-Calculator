@@ -4,20 +4,20 @@ import { useState } from "react"
 
 
 
-function Calculator(props) {
+function Multiplication(props) {
 
     const [result, setResult] = useState(0)
     const [num1, setNum1] = useState(0)
     const [num2, setNum2] = useState(0)
 
-    let num3 = num1 + num2
+    let num3 = num1 * num2
 
 
     
 
 
 
-    function addNumbers(event) {
+    function multiplyNumbers(event) {
 
         event.preventDefault()
        setResult(num3)
@@ -29,7 +29,7 @@ function Calculator(props) {
     return (
         <div className="container">
 
-            <h1>Add with React!</h1>
+            <h1>Multiply with React!</h1>
 
             
 
@@ -37,14 +37,14 @@ function Calculator(props) {
 
                 <input type="text" value={num1} onChange={event => setNum1(Number(event.target.value))}  name="value1" />
 
-                <span>+</span>
+                <span>x</span>
 
                 <input type="text" value={num2} onChange={event => setNum2(Number(event.target.value))} name="value2" />
 
                
 
                 <span>=</span>
-                <button onClick={addNumbers}>Calculate</button>
+                <button onClick={multiplyNumbers}>Calculate</button>
 
                 <h3>{result}</h3>
 
@@ -54,4 +54,4 @@ function Calculator(props) {
     )
 }
 
-export default Calculator
+export default Multiplication

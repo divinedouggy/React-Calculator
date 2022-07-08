@@ -1,11 +1,17 @@
 
 import './App.css';
-import Calculator from './components/Calculator'
+import Addition from './components/Addition';
+import Subtraction from './components/Subtraction';
+import Multiplication from './components/Multiplication';
+import Division from './components/Division';
 
 function App() {
   return (
     <div className="App">
-      <Calculator/>
+      <Addition/>
+      <Subtraction/>
+      <Multiplication/>
+      <Division/>
     </div>
   );
 }
